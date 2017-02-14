@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<br />
+No Account yet? @Html.ActionLink("Signup Now!", "SignUp", "Account")
+ActionLink memungkinkan kita menuju halaman SignUp yang berada pada Account controller. Lalu tambahkan View pada Welcome action dengan cara yang sama ketika menambah halaman Index. Ini adalah kode halaman Welcome:
+@{
+    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Hi <b>@Context.User.Identity.Name</b>! Welcome to my first MVC 5 Web App!</h2> 
+
+
+
